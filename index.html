@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Chat with Flask Backend</title>
+    <style>
+        .chat-message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .chat-message.user {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+        .chat-message.bot {
+            background-color: #f1f0f0;
+            align-self: flex-start;
+        }
+        #chat-window {
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-window" id="chat-window">
-            <!-- Chat messages will be displayed here -->
-        </div>
-        <form id="chat-form">
-            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
-            <button type="submit">Send</button>
-        </form>
-    </div>
+    <h1>Chat with Flask Backend</h1>
+    <div id="chat-window"></div>
+    <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your message" required>
+        <button type="submit">Send</button>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
