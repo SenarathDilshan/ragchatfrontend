@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       userInput.value = '';
 
       try {
-          const response = await fetch('http://your-backend-url/chat', {
+          const response = await fetch('http://0.0.0.0:8000/chat', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json'
