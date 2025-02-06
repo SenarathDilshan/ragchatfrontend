@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         userInput.value = '';
   
         try {
-            const response = await fetch('http://192.168.1.17:8001/chat', {
+            const response = await fetch('http://107.172.140.244:8000/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
