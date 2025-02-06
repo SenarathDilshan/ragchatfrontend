@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const typingMessage = addMessageToChatWindow('bot', 'Typing...');
 
         try {
-            const response = await fetch('https://13.60.185.144/chat', {
+            const response = await fetch('https://13.60.185.144:8080/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ text: message }) 
