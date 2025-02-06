@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             const response = await fetch('http://107.172.140.244:8000/chat', {
-                method: 'POST',
+                method: 'GET',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ text: message }) 
             });
